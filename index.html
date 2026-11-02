@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Beauty — 10 нових дизайн-концепцій</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23FF3D8B'/%3E%3Ccircle cx='16' cy='16' r='7' fill='%23C9FF3D'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Bricolage+Grotesque:wght@400;700;800&family=DM+Mono:wght@400;500&family=Fraunces:ital,wght@0,400;0,600;1,400&family=Onest:wght@400;500;700&family=Special+Elite&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
+<style>
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: #ECEAE4; color: #1A1A18;
+  font-family: "Onest", system-ui, sans-serif; font-size: 15px; line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 1300px; margin: 0 auto; padding: 48px 24px 90px; }
+.head { max-width: 860px; margin-bottom: 34px; }
+.eyebrow { margin: 0 0 12px; font: 500 11px/1.4 "DM Mono", monospace; letter-spacing: .14em; text-transform: uppercase; color: #5B5E56; }
+h1 { margin: 0 0 14px; font-family: "Fraunces", serif; font-weight: 400; font-size: clamp(2rem, 4.2vw, 3.2rem); line-height: 1.02; letter-spacing: -.02em; }
+.lead { margin: 0 0 16px; max-width: 62ch; color: #4A4A44; }
+.done { display: flex; flex-wrap: wrap; gap: 6px; margin: 18px 0 0; padding: 0; list-style: none; }
+.done li { font: 400 10.5px/1 "DM Mono", monospace; color: #5B5E56; border: 1px solid #D5D1C7; border-radius: 999px; padding: 6px 10px; }
+.rec { margin-top: 20px; padding: 14px 16px; border-left: 3px solid #1F4D3A; background: #F4F3EE; font-size: 13px; color: #3A3A34; }
+.rec b { color: #1A1A18; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 28px; }
+.card { background: #fff; border: 1px solid #DDD9D0; border-radius: 6px; overflow: hidden; transition: transform .45s cubic-bezier(.2,.8,.2,1), box-shadow .45s cubic-bezier(.2,.8,.2,1); }
+.card:hover { transform: translateY(-5px); box-shadow: 0 22px 44px -26px rgba(18,19,17,.5); }
+.pv { position: relative; aspect-ratio: 4 / 3; overflow: hidden; }
+.pv-chrome { position: absolute; top: 0; left: 0; right: 0; display: flex; justify-content: space-between; align-items: center; padding: 14px 18px; font-size: 10px; letter-spacing: .1em; text-transform: uppercase; }
+.pv-hero { position: absolute; left: 18px; right: 18px; bottom: 18px; }
+.pv-hero h3 { margin: 0 0 14px; font-weight: 400; }
+.pv-btn { display: inline-block; }
+.pv-media { position: absolute; transition: scale .6s cubic-bezier(.2,.8,.2,1); }
+.card:hover .pv-media { scale: 1.07; }
+.meta { padding: 16px 18px 20px; border-top: 1px solid #EEE; }
+.m-top { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+.m-num { font: 500 12px/1 "DM Mono", monospace; color: #5B5E56; }
+.m-top h2 { margin: 0; font-size: 17px; font-weight: 700; letter-spacing: -.01em; }
+.m-tag { font: 400 9.5px "DM Mono", monospace; color: #5B5E56; text-transform: uppercase; letter-spacing: .08em; }
+.m-desc { margin: 8px 0 0; font-size: 13px; color: #4A4A44; line-height: 1.45; }
+.m-swatches { display: flex; gap: 5px; margin: 11px 0 9px; }
+.m-swatches i { width: 20px; height: 20px; border-radius: 3px; border: 1px solid rgba(0,0,0,.1); }
+.m-spec { font: 400 10.5px/1.6 "DM Mono", monospace; color: #5B5E56; }
+.m-motion { margin: 7px 0 0; font-size: 12.5px; color: #3A3A34; }
+.m-motion b { font-weight: 700; }
+.m-note { margin: 5px 0 0; font-size: 12px; color: #5B5E56; }
+
+/* 01 Нео-брутал */
+.d1 .pv { background: #FF3D8B; border: 3px solid #111; }
+.d1 .pv-chrome { color: #111; font: 700 10px "DM Mono", monospace; }
+.d1 .pv-hero h3 { font: 400 36px/.92 "Archivo Black", sans-serif; color: #111; text-transform: uppercase; letter-spacing: -.03em; }
+.d1 .pv-hero h3 span { background: #C9FF3D; padding: 0 6px; }
+.d1 .pv-btn { background: #111; color: #C9FF3D; font: 700 10px "DM Mono", monospace; padding: 11px 15px; box-shadow: 4px 4px 0 #111; letter-spacing: .04em; }
+.d1 .pv-media { top: 44px; right: 20px; width: 62px; height: 62px; background: #C9FF3D; border: 3px solid #111; rotate: 12deg; }
+
+/* 02 Неон-глесс */
+.d2 .pv { background: radial-gradient(circle at 18% 8%, #3B1F6E, #1A1033 62%); }
+.d2 .pv-chrome { color: rgba(255,255,255,.55); font: 400 10px "Syne", sans-serif; }
+.d2 .pv-hero h3 { font: 800 34px/1 "Syne", sans-serif; color: #EAF9FF; }
+@supports ((-webkit-background-clip: text) or (background-clip: text)) {
+  .d2 .pv-hero h3 { background: linear-gradient(92deg, #39E0FF, #FF3FBF); -webkit-background-clip: text; background-clip: text; color: transparent; }
+}
+.d2 .pv-btn { color: #D9F7FF; border: 1px solid rgba(57,224,255,.55); background: rgba(255,255,255,.07); padding: 11px 17px; border-radius: 999px; font: 500 11px "Syne", sans-serif; box-shadow: 0 0 26px rgba(57,224,255,.35); }
+.d2 .pv-media { top: 46px; right: 20px; width: 92px; height: 92px; border-radius: 20px; background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.2); }
+
+/* 03 Хром-глем */
+.d3 .pv { background: radial-gradient(circle at 72% 26%, #2A2A3A, #0A0A12 72%); }
+.d3 .pv-chrome { color: rgba(255,255,255,.5); font: 400 10px "Syne", sans-serif; }
+.d3 .pv-hero h3 { font: 400 30px/1 "Syne", sans-serif; color: #EDEFF5; }
+@supports ((-webkit-background-clip: text) or (background-clip: text)) {
+  .d3 .pv-hero h3 { background: linear-gradient(180deg, #fff, #9AA0B0 46%, #fff 54%, #6A7080); -webkit-background-clip: text; background-clip: text; color: transparent; }
+}
+.d3 .pv-btn { color: #0A0A12; background: linear-gradient(180deg, #fff, #C0C4D0); padding: 11px 18px; border-radius: 4px; font: 700 10px "Syne", sans-serif; letter-spacing: .04em; }
+.d3 .pv-media { top: 50px; right: 20px; width: 74px; height: 74px; border-radius: 50%; background: radial-gradient(circle at 34% 28%, #fff, #9AA0B0 42%, #3A3F50 100%); }
+
+/* 04 Кінетична типографіка */
+.d4 .pv { background: #F5F5F0; }
+.d4 .pv-chrome { color: #111; font: 400 10px "DM Mono", monospace; }
+.d4 .pv-hero h3 { font: 400 46px/.84 "Archivo Black", sans-serif; color: #111; text-transform: uppercase; letter-spacing: -.045em; }
+.d4 .pv-hero h3 em { font-style: normal; color: #111; }
+@supports ((-webkit-text-stroke: 1px #000)) {
+  .d4 .pv-hero h3 em { color: transparent; -webkit-text-stroke: 1.5px #111; }
+}
+.d4 .pv-btn { background: #C9FF3D; color: #111; padding: 10px 14px; font: 700 9.5px "DM Mono", monospace; letter-spacing: .06em; }
+.d4 .pv-media { display: none; }
+
+/* 05 Вабі-сабі */
+.d5 .pv { background: #F2EEE7; }
+.d5 .pv-chrome { color: #5B5E56; font: 400 10px "DM Mono", monospace; }
+.d5 .pv-hero h3 { font: 400 32px/1.02 "Fraunces", serif; color: #1A1A18; }
+.d5 .pv-btn { color: #1A1A18; font: 400 13px "Fraunces", serif; border-bottom: 1px solid #1A1A18; padding-bottom: 2px; }
+.d5 .pv-media { top: 46px; right: 22px; width: 62px; height: 82px; background: #E4DED2; border: 1px solid #CFC8B8; }
+
+/* 06 Біофілія */
+.d6 .pv { background: #1F3D2E; }
+.d6 .pv-chrome { color: rgba(241,234,217,.65); font: 400 10px "DM Mono", monospace; }
+.d6 .pv-hero h3 { font: 400 33px/1 "Fraunces", serif; color: #F1EAD9; }
+.d6 .pv-btn { color: #F1EAD9; border: 1px solid rgba(241,234,217,.42); padding: 10px 16px; border-radius: 999px; font: 400 10px "DM Mono", monospace; letter-spacing: .06em; }
+.d6 .pv-media { top: 44px; right: 24px; width: 68px; height: 88px; border-radius: 50% 50% 50% 0; background: linear-gradient(158deg, #3E6B4E, #1F3D2E); border: 1px solid rgba(241,234,217,.16); }
+
+/* 07 Клініка-тех */
+.d7 .pv { background: #E8ECEA; }
+.d7 .pv-chrome { color: #5A6A62; font: 500 10px "DM Mono", monospace; }
+.d7 .pv-hero h3 { font: 500 27px/1.1 "Onest", sans-serif; color: #12211C; letter-spacing: -.01em; }
+.d7 .pv-btn { background: #0E7C6B; color: #EFFFFB; padding: 10px 16px; border-radius: 3px; font: 500 10px "DM Mono", monospace; letter-spacing: .04em; }
+.d7 .pv-media { top: 46px; right: 18px; width: 92px; height: 72px; border: 1px solid #C4D0C8; background: repeating-linear-gradient(#E8ECEA, #E8ECEA 11px, #DCE4DE 11px, #DCE4DE 12px); }
+
+/* 08 Конструктивізм */
+.d8 .pv { background: #F4EFE4; }
+.d8 .pv-chrome { color: #111; font: 400 11px "Bebas Neue", sans-serif; letter-spacing: .14em; }
+.d8 .pv-hero h3 { font: 400 50px/.82 "Bebas Neue", sans-serif; color: #111; letter-spacing: .02em; }
+.d8 .pv-btn { background: #D6281F; color: #FFFFFF; padding: 9px 18px; font: 400 13px "Bebas Neue", sans-serif; letter-spacing: .1em; }
+.d8 .pv-media { top: 0; right: 0; width: 92px; height: 100%; background: #D6281F; clip-path: polygon(0 0, 100% 0, 100% 100%, 32% 100%); }
+
+/* 09 Паперовий скрапбук */
+.d9 .pv { background: radial-gradient(circle at 30% 20%, #E0CFB0, #CDB996 80%); }
+.d9 .pv-chrome { color: #2A2118; font: 400 10px "Special Elite", monospace; }
+.d9 .pv-hero h3 { font: 400 25px/1.15 "Special Elite", monospace; color: #2A2118; }
+.d9 .pv-btn { background: #F4EBDD; color: #2A2118; border: 1px dashed #2A2118; padding: 9px 14px; font: 400 10.5px "Special Elite", monospace; rotate: -2deg; }
+.d9 .pv-media { top: 46px; right: 22px; width: 58px; height: 72px; background: #F4EBDD; border: 1px solid #C0AC8C; rotate: 5deg; box-shadow: 3px 3px 0 rgba(42,33,24,.18); }
+
+/* 10 Ілюстративний поп */
+.d10 .pv { background: #FFD54A; }
+.d10 .pv-chrome { color: #111; font: 700 10px "Bricolage Grotesque", sans-serif; }
+.d10 .pv-hero h3 { font: 800 32px/.95 "Bricolage Grotesque", sans-serif; color: #111; }
+.d10 .pv-btn { background: #C7337A; color: #fff; padding: 11px 20px; border-radius: 999px; font: 700 11px "Bricolage Grotesque", sans-serif; box-shadow: 0 4px 0 #9E2459; }
+.d10 .pv-media { top: 42px; right: 22px; width: 86px; height: 86px; border-radius: 50%; background: #4D6BFF; border: 3px solid #111; }
+
+@media (max-width: 640px) {
+  .wrap { padding: 32px 16px 60px; }
+  .grid { grid-template-columns: 1fr; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .card, .pv-media { transition: none; }
+  .card:hover { transform: none; }
+  .card:hover .pv-media { scale: 1; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="head">
+    <p class="eyebrow">Beauty · концепції · 10 напрямів</p>
+    <h1>10 нових дизайн-концепцій</h1>
+    <p class="lead">Кожне — <b>поза тим, що вже є у твоєму портфоліо</b>. Міні-hero показує характер напряму; нижче — палітра, шрифти, ідея анімації та кому підходить.</p>
+    <ul class="done">
+      <li>coffee-92 · cream+terracotta</li>
+      <li>beauty-studio-blue · blue serif</li>
+      <li>xal1fat.github.io · cobalt</li>
+      <li>dark-premium · dark+gold</li>
+      <li>pastel-atelier · pastel</li>
+      <li>retro-bakery · 70s</li>
+      <li>swiss-catalog · white/red</li>
+      <li>kvity-irpin · rose/sage</li>
+    </ul>
+    <p class="rec"><b>Рекомендую:</b> 05 Вабі-сабі, 06 Біофілія, 07 Клініка-тех — найближче до б’юті-ніші та довіри. <b>Сміливі:</b> 01 Нео-брутал і 03 Хром-глем — для яскравого бренду.</p>
+  </header>
+
+  <main class="grid">
+    <!-- 01 -->
+    <article class="card d1">
+      <div class="pv">
+        <div class="pv-chrome"><b>BEAUTY®</b><span>ЗАПИС</span></div>
+        <div class="pv-hero">
+          <h3>BEAUTY<br><span>STUDIO</span></h3>
+          <span class="pv-btn">ЗАПИСАТИСЬ</span>
+        </div>
+        <div class="pv-media"></div>
+      </div>
+      <div class="meta">
+        <div class="m-top"><span class="m-num">01</span><h2>Нео-брутал</h2><span class="m-tag">neo-brutalist</span></div>
+        <p class="m-desc">Хард-блоки, товсті рамки, offset-тіні. Голосно, молодо, впізнавано.</p>
+        <div class="m-swatches"><i style="background:#FF3D8B"></i><i style="background:#C9FF3D"></i><i style="background:#111"></i><i style="background:#fff"></i></div>
+        <div class="m-spec">Archivo Black · DM Mono<br>хард-блоки, offset-тіні</div>
+        <p class="m-motion"><b>Анімація:</b> стрибок блоків при скролі + наклейка сповзає на ховері.</p>
+        <p class="m-note">Кому: nails / barber, сміливий молодий бренд.</p>
+      </div>
+    </article>
+
+    <!-- 02 -->
+    <article class="card d2">
+      <div class="pv">
+        <div class="pv-chrome"><b>NIGHT</b><span>BOOK</span></div>
+        <div class="pv-hero">
+          <h3>NIGHT<br>BEAUTY</h3>
+          <span class="pv-btn">Записатись</span>
+        </div>
+        <div class="pv-media"></div>
+      </div>
+      <div class="meta">
+        <div class="m-top"><span class="m-num">02</span><h2>Неон-глесс</h2><span class="m-tag">futuristic glass</span></div>
+        <p class="m-desc">Темно-фіолетова ніч, скло, neon-градієнт. Вечірній, преміальний вайб.</p>
+        <div class="m-swatches"><i style="background:#1A1033"></i><i style="background:#39E0FF"></i><i style="background:#FF3FBF"></i><i style="background:#F4F4FF"></i></div>
+        <div class="m-spec">Syne<br>центр, скло, градієнтний текст</div>
+        <p class="m-motion"><b>Анімація:</b> пульсація світла + shimmer на склі.</p>
+        <p class="m-note">Кому: lashes/brows, вечірні послуги.</p>
+      </div>
+    </article>
+
+    <!-- 03 -->
+    <article class="card d3">
+      <div class="pv">
+        <div class="pv-chrome"><b>CHROME</b><span>STUDIO</span></div>
+        <div class="pv-hero">
+          <h3>GLAM<br>CHROME</h3>
+          <span class="pv-btn">ЗАПИСАТИСЬ</span>
+        </div>
+        <div class="pv-media"></div>
+      </div>
+      <div class="meta">
+        <div class="m-top"><span class="m-num">03</span><h2>Хром-глем</h2><span class="m-tag">y2k metal</span></div>
+        <p class="m-desc">Дзеркальний метал, midnight-фон, глянець. Сміливий premium.</p>
+        <div class="m-swatches"><i style="background:#0A0A12"></i><i style="background:#C0C4D0"></i><i style="background:#fff"></i><i style="background:#4D6BFF"></i></div>
+        <div class="m-spec">Syne<br>метал, дзеркальні поверхні</div>
+        <p class="m-motion"><b>Анімація:</b> перелив хрому за курсором + glow.</p>
+        <p class="m-note">Кому: glam, nails, premium beauty.</p>
+      </div>
+    </article>
+
+    <!-- 04 -->
+    <article class="card d4">
+      <div class="pv">
+        <div class="pv-chrome"><b>TYPE</b><span>01 / 10</span></div>
+        <div class="pv-hero">
+          <h3>BEAUTY<br><em>BEAUTY</em></h3>
+          <span class="pv-btn">ЗАПИСАТИСЬ</span>
+        </div>
+        <div class="pv-media"></div>
+      </div>
+      <div class="meta">
+        <div class="m-top"><span class="m-num">04</span><h2>Кінетична типографіка</h2><span class="m-tag">kinetic type</span></div>
+        <p class="m-desc">Без фото — лише тип. Великий рухомий шрифт як головний образ.</p>
+        <div class="m-swatches"><i style="background:#F5F5F0"></i><i style="background:#111"></i><i style="background:#C9FF3D"></i></div>
+        <div class="m-spec">Archivo Black<br>типографіка замість фото</div>
+        <p class="m-motion"><b>Анімація:</b> marquee-рух літер, outline ↔ fill.</p>
+        <p class="m-note">Кому: сильний бренд, мінімум фото.</p>
+      </div>
+    </article>
+
+    <!-- 05 -->
+    <article class="card d5">
+      <div class="pv">
+        <div class="pv-chrome"><b>SALON</b><span>КИЇВ</span></div>
+        <div class="pv-hero">
+          <h3>Тиша<br>і форма</h3>
+          <span class="pv-btn">записатись →</span>
+        </div>
+        <div class="pv-media"></div>
+      </div>
+      <div class="meta">
+        <div class="m-top"><span class="m-num">05</span><h2>Вабі-сабі</h2><span class="m-tag">japanese minimal</span></div>
+        <p class="m-desc">Багато повітря, асиметрія, тонкі лінії. Спокій і точність.</p>
+        <div class="m-swatches"><i style="background:#F2EEE7"></i><i style="background:#1A1A18"></i><i style="background:#5B5E56"></i><i style="background:#B4552D"></i></div>
+        <div class="m-spec">Fraunces · DM Mono<br>асиметрія, негативний простір</div>
+        <p class="m-motion"><b>Анімація:</b> повільне проявлення, зсув тіней.</p>
+        <p class="m-note">Кому: spa, масаж, косметологія.</p>
+      </div>
+    </article>
+
+    <!-- 06 -->
+    <article class="card d6">
+      <div class="pv">
+        <div class="pv-chrome"><b>FLORA</b><span>SALON</span></div>
+        <div class="pv-hero">
+          <h3>Nature<br>inside</h3>
+          <span class="pv-btn">Записатись</span>
+        </div>
+        <div class="pv-media"></div>
+      </div>
+      <div class="meta">
+        <div class="m-top"><span class="m-num">06</span><h2>Біофілія</h2><span class="m-tag">biophilic</span></div>
+        <p class="m-desc">Глибокий зелений + крем, ботанічні лінії, структурна сітка.</p>
+        <div class="m-swatches"><i style="background:#1F3D2E"></i><i style="background:#F1EAD9"></i><i style="background:#A7B49A"></i><i style="background:#C9A227"></i></div>
+        <div class="m-spec">Fraunces · DM Mono<br>темно-зелена база, ботаніка</div>
+        <p class="m-motion"><b>Анімація:</b> листя розкривається при скролі.</p>
+        <p class="m-note">Кому: eco / clean beauty, органіка.</p>
+      </div>
+    </article>
+
+    <!-- 07 -->
+    <article class="card d7">
+      <div class="pv">
+        <div class="pv-chrome"><b>CLINIC</b><span>01</span></div>
+        <div class="pv-hero">
+          <h3>Точність<br>у догляді</h3>
+          <span class="pv-btn">Записатись</span>
+        </div>
+        <div class="pv-media"></div>
+      </div>
+      <div class="meta">
+        <div class="m-top"><span class="m-num">07</span><h2>Клініка-тех</h2><span class="m-tag">clinical tech</span></div>
+        <p class="m-desc">Дані, специфікації, mono-лейбли. Довіра через точність.</p>
+        <div class="m-swatches"><i style="background:#E8ECEA"></i><i style="background:#12211C"></i><i style="background:#0E7C6B"></i><i style="background:#C4D0C8"></i></div>
+        <div class="m-spec">Onest · DM Mono<br>сітка, спеки, mono-лейбли</div>
+        <p class="m-motion"><b>Анімація:</b> спеки заповнюються, лінійки малюються.</p>
+        <p class="m-note">Кому: апаратна косметологія, догляд.</p>
+      </div>
+    </article>
+
+    <!-- 08 -->
+    <article class="card d8">
+      <div class="pv">
+        <div class="pv-chrome"><b>СТУДІЯ</b><span>1921</span></div>
+        <div class="pv-hero">
+          <h3>КРАСА</h3>
+          <span class="pv-btn">ЗАПИСАТИСЬ</span>
+        </div>
+        <div class="pv-media"></div>
+      </div>
+      <div class="meta">
+        <div class="m-top"><span class="m-num">08</span><h2>Конструктивізм</h2><span class="m-tag">constructivist</span></div>
+        <p class="m-desc">Діагоналі, геометрія, плакатність. Сильний графічний характер.</p>
+        <div class="m-swatches"><i style="background:#F4EFE4"></i><i style="background:#D6281F"></i><i style="background:#111"></i></div>
+        <div class="m-spec">Bebas Neue<br>діагоналі, геометрія, плакат</div>
+        <p class="m-motion"><b>Анімація:</b> діагональний wipe, різкі зсуви.</p>
+        <p class="m-note">Кому: барбершоп, арт-напрям.</p>
+      </div>
+    </article>
+
+    <!-- 09 -->
+    <article class="card d9">
+      <div class="pv">
+        <div class="pv-chrome"><b>SCRAPBOOK</b><span>2026</span></div>
+        <div class="pv-hero">
+          <h3>Краса<br>в деталях</h3>
+          <span class="pv-btn">записатись</span>
+        </div>
+        <div class="pv-media"></div>
+      </div>
+      <div class="meta">
+        <div class="m-top"><span class="m-num">09</span><h2>Паперовий скрапбук</h2><span class="m-tag">paper collage</span></div>
+        <p class="m-desc">Шари паперу, штампи, typewriter. Тепло і рукотворність.</p>
+        <div class="m-swatches"><i style="background:#D9C7A8"></i><i style="background:#F4EBDD"></i><i style="background:#2A2118"></i><i style="background:#B23A2E"></i></div>
+        <div class="m-spec">Special Elite · Bricolage<br>шари, штампи, typewriter</div>
+        <p class="m-motion"><b>Анімація:</b> накладання карток, штамп-поява.</p>
+        <p class="m-note">Кому: handmade, авторський бренд.</p>
+      </div>
+    </article>
+
+    <!-- 10 -->
+    <article class="card d10">
+      <div class="pv">
+        <div class="pv-chrome"><b>POP!</b><span>BEAUTY</span></div>
+        <div class="pv-hero">
+          <h3>Beauty<br>Pop</h3>
+          <span class="pv-btn">Записатись</span>
+        </div>
+        <div class="pv-media"></div>
+      </div>
+      <div class="meta">
+        <div class="m-top"><span class="m-num">10</span><h2>Ілюстративний поп</h2><span class="m-tag">illustrative pop</span></div>
+        <p class="m-desc">Яскраві кольори, персонажі, наклейки. Грайливо і дружньо.</p>
+        <div class="m-swatches"><i style="background:#FFD54A"></i><i style="background:#FF4D9D"></i><i style="background:#4D6BFF"></i><i style="background:#111"></i></div>
+        <div class="m-spec">Bricolage Grotesque<br>ілюстрації, наклейки, колаж</div>
+        <p class="m-motion"><b>Анімація:</b> пружинисті ховери, персонаж махає.</p>
+        <p class="m-note">Кому: діти/підлітки, nails, яскравий бренд.</p>
+      </div>
+    </article>
+  </main>
+</div>
+</body>
+</html>
